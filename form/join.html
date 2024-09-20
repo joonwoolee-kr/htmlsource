@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>필수 사항</legend>
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>부가 입력 사항</legend>
+      <div>
+        <label for="birth">생년월일</label>
+        <input type="date" name="birth" id="birth" />
+      </div>
+      <div>
+        <label for="city">거주지를 선택해 주세요</label>
+        <br />
+        <select name="city" id="city">
+          <option value="seoul">서울시</option>
+          <option value="gyeonggido">경기도</option>
+          <option value="busan">부산시</option>
+          <option value="jejudo">제주도</option>
+        </select>
+      </div>
+      <div>
+        <label for="hobby">취미</label>
+        <label for="hobby1">독서</label>
+        <input type="checkbox" name="hobby1" id="book" value="book" />
+        <label for="hobby2">여행</label>
+        <input type="checkbox" name="hobby2" id="travel" value="travel" />
+        <label for="hobby3">영화감상</label>
+        <input type="checkbox" name="hobby3" id="movie" value="movie" />
+      </div>
+      <div>
+        <label for="sex">성별</label>
+        <label for="male">남성</label>
+        <input type="radio" name="sex" id="male" value="male" />
+        <label for="female">여성</label>
+        <input type="radio" name="sex" id="female" value="female" />
+      </div>
+      <div>
+        <label for="photo">사진을 등록해 주세요</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <div>
+        <label for="route">방문 경로를 말씀해 주세요</label>
+        <br />
+        <textarea name="route" id="route" cols="30" rows="10"></textarea>
+      </div>
+    </fieldset>
+    <div>
+      <input type="button" value="회원가입" />
+      <input type="reset" value="재작성" />
+      <input type="submit" value="전송" />
+    </div>
+  </body>
+</html>
